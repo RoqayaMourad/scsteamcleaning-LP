@@ -1,4 +1,6 @@
 
+ AOS.init();
+
 
  var loader;
  function loadNow(opacity){
@@ -20,6 +22,9 @@
      loader = document.getElementById('loader');
      loadNow(1);
  })
+
+
+
 
 
 function scrollToTop() { 
@@ -52,7 +57,7 @@ function scrollFunction() {
     document.getElementById("logo").style.width = "300";
   }
 }
-*/
+
 $(window).scroll(function () {
     console.log($(window).scrollTop())
     if ($(window).scrollTop() >63) {
@@ -65,4 +70,4 @@ $(window).scroll(function () {
       $('.navbar').removeClass('sticky');
     }
   });
-
+*/

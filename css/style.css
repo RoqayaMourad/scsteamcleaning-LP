@@ -172,6 +172,7 @@ form h3 {
 /* ************************************************ */
 .why-us , .services {  
     background-color: #EDEFF1;
+    overflow: hidden;
 }
 .why-us h3 , .services h3 , .testimonials h3{
     color: #000;
@@ -187,6 +188,11 @@ form h3 {
 .why-us ul {
     list-style: none;
     padding-left: 0rem;
+}
+.why-us i {
+        color: #256FB0;
+        font-size: 1.5rem;
+        padding: 0.2rem;
 }
 
 /* ************************************************ */
@@ -293,6 +299,7 @@ form h3 {
     background-position:right;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 .contact-us .card {
     border-radius: 30% !important;
@@ -424,15 +431,21 @@ footer p {
         .hr{
             margin-left: 30%;
         }
-        .why-us .hr {
+        /* .why-us .hr {
             margin-left: 0 !important;
-        }
+        } */
         .sticky-divs {
             display: none;
         }
         .mobile-phone{
             display: block;
         }
+        .why-us {
+            text-align: center;
+        }
+        .why-us .hr {
+         margin-left:30% !important;
+     }
     
     }
     @media (max-width:767.98px) {
@@ -463,9 +476,7 @@ footer p {
 
     }
    
-}
-
-
+    }
     @media (max-width:500px) {
         .cta-sec p {
             font-size: 1.1rem;
@@ -478,8 +489,8 @@ footer p {
         .h1-header{
             font-size: 1.8rem;
         }
-        form .h3 {
-            font-size: 1.3rem;
+        form h3 {
+            font-size: 1.2rem !important;
         }
         .c-name{
             font-size: 1.2rem;
@@ -487,12 +498,7 @@ footer p {
        #logo{
            width: 200px;
        }
-       .why-us {
-           text-align: center;
-       }
-       .why-us .hr {
-        margin-left:30% !important;
-    }
+     
     .testimonial{
         text-align: center;
     }
@@ -501,10 +507,5 @@ footer p {
 
     }
 
-
-
-    @media (max-width: 575.98px) {
-
-     }
 
 
