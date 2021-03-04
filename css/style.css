@@ -69,10 +69,11 @@ nav ul {
 padding: 0.3rem 1rem !important;
 }
 .logo{
-    width: 200;
+    width:200px;
 }
 #logo {
     transition: all .5 ease-in-out;
+    width: 350px;
 }
 nav ul li a {
     color: rgb(255, 255, 255);
@@ -229,10 +230,8 @@ form h3 {
 /* ************************************************ */
 /*             testimonials style #51D958                 */
 /* ************************************************ */
-
-
 .testimonials {
- margin-top: 40px;    
+    overflow: hidden;
 }
 .testimonial {
     margin-bottom: 3em;
@@ -240,9 +239,10 @@ form h3 {
     padding: 2em;
     /* border-right: 30px solid #F9F9F9; */
     min-height: 169px;
+
 }
 
-.testimonial:before {
+/* .testimonial:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -251,12 +251,12 @@ form h3 {
     -o-transform: skew(-3deg,-2deg);
     -moz-transform: skew(-3deg,-2deg);
     bottom: 14px;
-    box-shadow: 0 16px 5px rgba(0,0,0,.04);
+    box-shadow: 0 16px 5px  rgb(37, 111 ,176);
     max-width: 90%;
     width: 90%;
     height: 50px;
     left: 1px;
-}
+} */
 
 .avatar .img-circle {
     background: #fff;
@@ -277,7 +277,7 @@ form h3 {
 }
 
 .testimonial h4 {
-    margin-bottom: 8px;
+    margin-bottom:8px;
 }
 
 .testimonial .testimony-body {
@@ -399,10 +399,112 @@ footer p {
         color: #fff;
     }
 
+
+
+
+    .mobile-phone {
+        display: none;
+        background-color:#51D958;
+        font-size: 1.5rem;
+        position: sticky;
+        bottom: 0;
+        z-index: 999;
+    }
+    .mobile-phone a {
+        color: #fff;
+        font-weight: 600;
+    }
+
+
+
+    @media (max-width:991.98px) {
+        .header-content{
+            text-align: center;
+        }
+        .hr{
+            margin-left: 30%;
+        }
+        .why-us .hr {
+            margin-left: 0 !important;
+        }
+        .sticky-divs {
+            display: none;
+        }
+        .mobile-phone{
+            display: block;
+        }
+    
+    }
     @media (max-width:767.98px) {
         .cta-sec p {
             font-size: 1.1rem;
             letter-spacing: 2px;
             margin-top: .8rem
         }
+        .testimonial{
+            text-align: center;
+        }
+        .services .card {
+      
+            width: 80%;
+            margin: 1rem auto;
     }
+    }
+    @media (max-width:576px) {
+        .testimonial img {
+            
+        width: 200px;
+        }
+        .testimonial {
+             margin-bottom: 0em;
+    
+             padding:0rem;
+        
+
+    }
+   
+}
+
+
+    @media (max-width:500px) {
+        .cta-sec p {
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            margin-top: .8rem
+        }
+        .header-pl{
+            display: none;
+        }
+        .h1-header{
+            font-size: 1.8rem;
+        }
+        form .h3 {
+            font-size: 1.3rem;
+        }
+        .c-name{
+            font-size: 1.2rem;
+        }
+       #logo{
+           width: 200px;
+       }
+       .why-us {
+           text-align: center;
+       }
+       .why-us .hr {
+        margin-left:30% !important;
+    }
+    .testimonial{
+        text-align: center;
+    }
+  
+
+
+    }
+
+
+
+    @media (max-width: 575.98px) {
+
+     }
+
+
