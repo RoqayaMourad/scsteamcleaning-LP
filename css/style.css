@@ -508,7 +508,7 @@ footer p {
     }
    header form {
         border: none;
-        width: 90%;
+        width:100% !important;
   
     }
 
