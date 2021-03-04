@@ -1,12 +1,24 @@
-html, body {
+/* ************************************************ */
+/*              colors                        */
+/* main color #256FB0 */
+/* text after header #757380 */
+/* cta color #51D958 */
+/* ************************************************ */
+
+html,
+body {
     margin: 0;
     padding: 0;
-    color:#fff;
-    font-family:"Montserrat" , sans-serif;
-} 
-.text-info{
-    color:#000 !important;
-} 
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.text-info {
+    color: #256FB0 !important;
+}
 
 /* ************************************************ */
 /*              loader style                        */
@@ -15,7 +27,7 @@ html, body {
     position: fixed;
     width: 100%;
     height: 100vh;
-    z-index: 999;
+    z-index: 999999999999999;
     overflow: visible;
     background: rgb(241, 241, 241) url(../imgs/preloader.gif) no-repeat center center;
 }
@@ -25,13 +37,14 @@ html, body {
 /* ************************************************ */
 header {
     width: 100%;
-    background:url(../imgs/SCS-Steaming-Slider-01.jpg),rgba(0,0,0,0);
+    background: url(../imgs/SCS-Steaming-Slider-01.jpg), rgba(0, 0, 0, 0);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:top;
+    background-position: top;
     background-blend-mode: overlay;
     position: relative;
 }
+
 /*  linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(37,111,176,0.8) 50%) */
 /* navbar */
 
@@ -41,11 +54,12 @@ nav {
     background-color: rgba(0, 0, 0, 0.425);
 }
 
-.navbar-brand {
-}
+.navbar-brand {}
+
 nav ul {
-    padding: 1rem 3rem ;
+    padding: 1rem 3rem;
 }
+
 nav ul li a {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -64,79 +78,303 @@ ul li {
 
 
 form {
-    border:none;
+    border: none;
     width: 70%;
     margin: auto;
 }
-.card-header , .card-body{
+
+.card-header,
+.card-body {
     border: none;
     background-color: #fff;
 }
-.hr{
+
+.c-name {
+    color: #256FB0;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.hr {
     height: 4px;
     width: 40%;
     background-color: #256FB0;
+    margin-bottom: 1rem;
 }
-.h1-header{
-    margin-top: 1rem;
-}
+
 .h1-header span {
     font-size: larger;
     color: #256FB0;
 }
-form h3{
-    color: #000;
+
+form h3 {
+    color:#256FB0;
     font-weight: 600;
     padding-top: .5rem;
 }
+
 .send-btn {
-    background-color:#51D958 !important;
     border: none;
     font-weight: 600;
     padding: 0.8rem 1.2rem;
+    background-color: rgb(37, 111, 176);
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    white-space: nowrap;
+    line-height: 18px;
+    letter-spacing: 0px;
+    border-color: transparent;
+    border-radius: 3px;
+    transform-origin: 97.9375px 29px;
+    opacity: 1;
+    transform: translate(0px, 0px);
+    visibility: visible;
+    border-width: 0px;
+    border-style: none;
 }
-.header-content i{
+
+.header-content i {
     color: #256FB0;
     font-size: 1.5rem;
     padding: 0.2rem;
 
 }
 
-  
+
 /* ************************************************ */
-/*             sticky phone                       */
+/*             why-us style #51D958                 */
 /* ************************************************ */
-.sticky-phone{
-    width: 3rem;
-    height: 3rem;
-    position:sticky;
-    bottom: 5%;
-    left: 2%;
+.why-us , .services {  
+    background-color: #EDEFF1;
+}
+.why-us h3 , .services h3 , .testimonials h3{
+    color: #000;
+    font-weight:600;
+    font-size: 2.5rem;
+
+}
+.wu-content {
+    font-weight: 400;
+    line-height: 1.5;
+     color: #757380;
+}
+.why-us ul {
+    list-style: none;
+    padding-left: 0rem;
+}
+
+/* ************************************************ */
+/*             services style #51D958                 */
+/* ************************************************ */
+.services {
+    color: #757380;
+}
+
+.baseBlock {
+	margin: 0px 0px 35px 0px;
+	padding: 0 0 15px 0px;
+	border-radius: 5px;
+	overflow: hidden;
+	min-height: 390px;
+	background: #fff;
+	-moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	-o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.baseBlock:hover {
+	-webkit-transform: translate(0, -8px);
+	-moz-transform: translate(0, -8px);
+	-ms-transform: translate(0, -8px);
+	-o-transform: translate(0, -8px);
+	transform: translate(0, -8px);
+	box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
+}
+.services .card-title {
+    margin-bottom: .75rem;
+    color: #256fb0;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+/* ************************************************ */
+/*             testimonials style #51D958                 */
+/* ************************************************ */
+
+
+.testimonials {
+ margin-top: 40px;    
+}
+.testimonial {
+    margin-bottom: 3em;
+    background: #fff;
+    padding: 2em;
+    border-right: 30px solid #F9F9F9;
+    min-height: 169px;
+}
+
+.testimonial:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -ms-transform: skew(-3deg,-2deg);
+    -webkit-transform: skew(-3deg,-2deg);
+    -o-transform: skew(-3deg,-2deg);
+    -moz-transform: skew(-3deg,-2deg);
+    bottom: 14px;
+    box-shadow: 0 16px 5px rgba(0,0,0,.04);
+    max-width: 90%;
+    width: 90%;
+    height: 50px;
+    left: 1px;
+}
+
+.avatar .img-circle {
+    background: #fff;
+    padding: 3px;
+    border: 1px solid #c5c5c5;
+}
+
+.avatar img {
+    max-width: 100%;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.testimonial h4, .testimonial h4 a {
+    font-weight: 700;
+}
+
+.testimonial h4 {
+    margin-bottom: 8px;
+}
+
+.testimonial .testimony-body {
+    font-size: .9em;
+    color: #757380 ;
+}   
+
+/* ************************************************ */
+/*             contact us style #51D958              */
+/* ************************************************ */
+.contact-us {
+    background-image: url(../imgs/main-image.jpg);
+    background-position:right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-us .card {
+    border-radius: 30% !important;
+}
+.contact-us h3 {
+    color: #256FB0;
+}
+
+/* ************************************************ */
+/*             footer style #51D958                 */
+/* ************************************************ */
+footer {
+    background-color: #2A2931;
+}
+footer p {
+    color: #bfbcca;
+}
+
+/* ************************************************ */
+/*             cta btn style #51D958                 */
+/* ************************************************ */
+.cta-btn {
+    /* padding:0.5rem 3rem; */
     background-color: #51D958;
-    display: flex;
-    align-items: center;
-    text-align: center; 
-    z-index: 999;
-}
-.sticky-phone a{
-    font-size: 2rem;
-    margin: auto;
+    font-weight: 600;
     color: #fff;
+    font-size: 1.3rem;
+    border: none;
+    font-weight: 600;
+    padding: 1rem 1.35rem;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    white-space: nowrap;
+    line-height: 18px;
+    letter-spacing: 0px;
+    border-color: transparent;
+    border-radius: 3px;
+    transform-origin: 97.9375px 29px;
+    opacity: 1;
+    transform: translate(0px, 0px);
+    visibility: visible;
+    border-width: 0px;
+    border-style: none;
+
 }
-.scroll {
-    width: 3rem;
-    height: 3rem;
-    position:sticky;
-    bottom: 5%;
-    left: 95%;
-    background-color: #51D958;
-    display: flex;
-    align-items: center;
-    text-align: center; 
-    z-index: 999;
+
+/* ************************************************ */
+/*             cta section                           */
+/* ************************************************ */
+.cta-sec {
+    background-color: #2A2931;
+    overflow: hidden
 }
-.scroll a {
+
+.cta-sec p {
     font-size: 2rem;
-    margin: auto;
+    letter-spacing: 4px;
+    font-weight: 600;
     color: #fff;
+    margin-top: .5rem
 }
+
+
+
+    /* ************************************************ */
+    /*             sticky                               */
+    /* ************************************************ */
+    .sticky-phone {
+        width: 3rem;
+        height: 3rem;
+        position: fixed;
+        bottom: 5%;
+        left: 2%;
+        background-color: #51D958;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .sticky-phone a {
+        font-size: 2rem;
+        margin: auto;
+        color: #fff;
+    }
+
+    .scroll {
+        width: 3rem;
+        height: 3rem;
+        position: fixed;
+        bottom: 5%;
+        left: 95%;
+        background-color: #51D958;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .scroll a {
+        font-size: 2rem;
+        margin: auto;
+        color: #fff;
+    }
+
+    @media (max-width:767.98px) {
+        .cta-sec p {
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            margin-top: .8rem
+        }
+    }
