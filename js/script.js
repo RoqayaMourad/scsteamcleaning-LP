@@ -21,8 +21,6 @@
      loadNow(1);
  })
 
-
-window.addEventListener("scroll",function(){
-    var nav = document.querySelector('nav');
-    nav.classList.toggle('sticky-nav', window.scrollY > 0 )
-})
+function scrollToTop() { 
+    $(document).load().scrollTop(0);
+} 

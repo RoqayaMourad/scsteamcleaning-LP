@@ -132,6 +132,10 @@ form h3 {
     visibility: visible;
     border-width: 0px;
     border-style: none;
+    transition: all 0.2s ease-in-out;
+}
+.send-btn:hover {
+    background-color: rgb(75, 75, 75);
 }
 
 .header-content i {
@@ -181,6 +185,7 @@ form h3 {
 	-moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 	-o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px #256FB0 solid;
 }
 
 .baseBlock:hover {
@@ -196,6 +201,9 @@ form h3 {
     color: #256fb0;
     font-weight: 600;
     font-size: 1.6rem;
+}
+.services .card-body {
+    border-top: 1px solid #256fb0;
 }
 
 /* ************************************************ */
@@ -334,8 +342,8 @@ footer p {
     /*             sticky                               */
     /* ************************************************ */
     .sticky-phone {
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
         position: fixed;
         bottom: 5%;
         left: 2%;
@@ -347,14 +355,14 @@ footer p {
     }
 
     .sticky-phone a {
-        font-size: 2rem;
+        font-size: 3rem;
         margin: auto;
         color: #fff;
     }
 
     .scroll {
         width: 3rem;
-        height: 3rem;
+        height:3rem;
         position: fixed;
         bottom: 5%;
         left: 95%;
