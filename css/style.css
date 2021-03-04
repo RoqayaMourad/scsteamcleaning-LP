@@ -363,6 +363,10 @@ footer p {
     margin-top: .5rem;
 }
 
+.cta-btn a {
+    color: #fff;
+    text-decoration: none;
+}
 
 
     /* ************************************************ */
@@ -502,8 +506,11 @@ footer p {
     .testimonial{
         text-align: center;
     }
+   header form {
+        border: none;
+        width: 90%;
   
-
+    }
 
     }
 

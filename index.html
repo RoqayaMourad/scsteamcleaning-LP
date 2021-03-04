@@ -42,13 +42,13 @@
                             <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Why Us</a>
+                            <a class="nav-link" href="#why-us">Why Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="#contact-us">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -76,7 +76,7 @@
                         <div>
                             <div class="container">
                                 <!--Form with header-->
-                                <form action="mail.php" method="post">
+                                <form action="process.php" method="post">
                                     <div class="card rounded-0">
                                         <div class="card-header p-0">
                                             <div class=" text-center py-2">
@@ -122,7 +122,7 @@
                                                         <div class="input-group-text"><i
                                                                 class="fa fa-comment text-info"></i></div>
                                                     </div>
-                                                    <textarea class="form-control" placeholder="Message"
+                                                    <textarea class="form-control" id="message" name="message"placeholder="Message"
                                                         required></textarea>
                                                 </div>
                                             </div>
@@ -148,7 +148,7 @@
         <!-- end of header section -->
 
         <!-- why us section -->
-        <section class="why-us py-lg-3">
+        <section class="why-us py-lg-3" id="why-us">
             <div class="container">
                 <div class="row d-flex align-items-center pt-4 mb-3">
                     <div class="col-12 col-lg-6 order-lg-0 order-1 d-none d-lg-block" data-aos="fade-right"
@@ -174,7 +174,8 @@
                                 </ul>
                             </div>
                             <button class="btn cta-btn btn-primary" value="contact us">
-                                Contact Us
+                                <a href="#contact-us">
+                                Contact Us</a>
                             </button>
 
                         </div>
@@ -195,7 +196,8 @@
                         data-aos="fade-left" data-aos-duration="800">
 
                         <button class="btn cta-btn btn-primary mt-2" value="contact us">
-                            Contact Us
+                            <a href="#contact-us">
+                                Contact Us</a>
                         </button>
 
                     </div>
@@ -208,7 +210,7 @@
 
 
         <!-- services section -->
-        <section class="services py-lg-5 py-2">
+        <section class="services py-lg-5 py-2" id="services">
             <div class="container">
                 <div class="text-center">
                     <h3 class="mx-auto mb-2"> <span>Our Services</span></h3>
@@ -225,7 +227,8 @@
                                     later remove carefully by using cotton cloths.
                                 </p>
                                 <button class="btn cta-btn btn-primary" value="contact us">
-                                    Contact Us
+                                    <a href="#contact-us">
+                                        Contact Us</a>
                                 </button>
                             </div>
                         </div>
@@ -241,7 +244,8 @@
                                     spot, tear or any kind of visible damage.
                                 </p>
                                 <button class="btn cta-btn btn-primary" value="contact us">
-                                    Contact Us
+                                    <a href="#contact-us">
+                                        Contact Us</a>
                                 </button>
                             </div>
                         </div>
@@ -257,7 +261,8 @@
                                     tested and carefully selected
                                 </p>
                                 <button class="btn cta-btn btn-primary" value="contact us">
-                                    Contact Us
+                                    <a href="#contact-us">
+                                        Contact Us</a>
                                 </button>
                             </div>
                         </div>
@@ -272,7 +277,8 @@
                                     and grime. The steam cleaning of tiles preserves the aesthetics…...
                                 </p>
                                 <button class="btn cta-btn btn-primary" value="contact us">
-                                    Contact Us
+                                    <a href="#contact-us">
+                                        Contact Us</a>
                                 </button>
                             </div>
                         </div>
@@ -287,7 +293,8 @@
                                     technology, this has been proven to be the most effective method..
                                 </p>
                                 <button class="btn cta-btn btn-primary" value="contact us">
-                                    Contact Us
+                                    <a href="#contact-us">
+                                        Contact Us</a>
                                 </button>
                             </div>
                         </div>
@@ -303,7 +310,8 @@
                                     aim to provide the best possible carpet cleaning service
                                 </p>
                                 <button class="btn cta-btn btn-primary" value="contact us">
-                                    Contact Us
+                                    <a href="#contact-us">
+                                        Contact Us</a>
                                 </button>
                             </div>
                         </div>
@@ -327,7 +335,8 @@
                         data-aos="fade-left" data-aos-duration="800">
 
                         <button class="btn cta-btn btn-primary mt-2" value="contact us">
-                            Contact Us
+                            <a href="#contact-us">
+                                Contact Us</a>
                         </button>
 
                     </div>
@@ -396,10 +405,10 @@
 
 
         <!-- contact us  -->
-        <div class="contact-us py-lg-5 py-3">
+        <div class="contact-us py-lg-5 py-3" id="contact-us">
             <div class="container">
                 <div class="row"  data-aos="zoom-out-up">
-                    <form action="mail.php" method="post">
+                    <form action="process.php" method="post">
                         <div class="card">
                             <div class="card-header p-0">
                                 <div class=" text-center py-2">
@@ -412,7 +421,7 @@
                                         <div class="input-group-prepend">
                                             <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
                                         </div>
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name"
+                                        <input type="text" class="form-control" id="name2" name="name" placeholder="Name"
                                             required>
                                     </div>
                                 </div>
@@ -421,7 +430,7 @@
                                         <div class="input-group-prepend">
                                             <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
                                         </div>
-                                        <input type="email" class="form-control" id="email" name="email"
+                                        <input type="email" class="form-control" id="email2" name="email"
                                             placeholder="Mail" required>
                                     </div>
                                 </div>
@@ -432,7 +441,7 @@
                                                 <i class="fa fa-phone text-info" aria-hidden="true"></i>
                                             </div>
                                         </div>
-                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                        <input type="tel" class="form-control" id="phone2" name="phone"
                                             placeholder="Phone" required>
                                     </div>
                                 </div>
@@ -442,7 +451,7 @@
                                         <div class="input-group-prepend">
                                             <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
                                         </div>
-                                        <textarea class="form-control" placeholder="Message" required></textarea>
+                                        <textarea class="form-control" id="message2" name="message" placeholder="Message" required></textarea>
                                     </div>
                                 </div>
 
