@@ -23,18 +23,9 @@
      loadNow(1);
  })
 
-
-
-
-
 function scrollToTop() { 
     window.scrollTo(0,0); 
 } 
-
-
-
-
-/*
 
 window.onscroll = function(){stickyFunction()};
 var navbar = document.getElementById("navbar");
@@ -70,4 +61,21 @@ $(window).scroll(function () {
       $('.navbar').removeClass('sticky');
     }
   });
-*/
+
+var date = new Date();
+var dd = String(date.getDate()).padStart(2, '0');
+var mm = String(date.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = date.getFullYear();
+var hours = date.getHours();
+var minutes = date.getMinutes();
+var today_time = hours + 1 + ':' + minutes + ':00';
+var today_date = mm + '/' + dd + '/' + yyyy;
+
+  $("#clock")
+  .countdown(today_date+" "+today_time, function(event) {
+    $(this).text(
+      event.strftime('%M:%S')
+    );
+  });
+
+ 
